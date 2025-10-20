@@ -1,39 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jurusan.smkn 1blega</title>
-     <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website resmi SMKN 1 Blega. Informasi PPDB, jurusan, profil sekolah, dan kontak.">
+  <title>website bang_lerz</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
 </head>
 <body>
-   <ul class="nav-links">
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="c:\Users\MyPC PRO\Downloads\images.jpg" alt="Logo SMKN 1 Blega">
+      <h1>SMKN 1 BLEGA</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
         <li><a href="beranda">Beranda</a></li>
         <li><a href="profil.html">Profil</a></li>
         <li><a href="jurusan.html">Jurusan</a></li>
         <li><a href="kontak.html">Kontak</a></li>
       </ul>
-     <section id="jurusan" class="program">
+      <button class="menu-btn">☰</button>
+    </nav>
+  </header>
+
+  <!-- BANNER -->
+  <section class="banner" id="beranda">
+  <P>Penerimaan Siswa Baru Tahun Pelajaran 2025‑2026</P>
+  <!-- tambahkan kode ini di bawah tulisan-->
+  <img src="c:\Users\MyPC PRO\Downloads\SLIDE1 (1).jpg">
+  <!--klik untuk pendaftaran-->
+  <a href="pendaftaran.html" class="btn">Klik Untuk Pendaftaran</a>
+</section>
+
+
+  <!-- PROFIL -->
+  <section id="profil" class="profil">
+    <h2>Profil Sekolah</h2>
+    <p>SMK Negeri 1 Blega merupakan sekolah pusat keunggulan yang berkomitmen menghasilkan lulusan unggul dan berdaya saing tinggi di bidang teknologi dan rekayasa.</p>
+  </section>
+
+  <!-- PROGRAM KEAHLIAN -->
+  <section id="jurusan" class="program">
     <h2>Program Keahlian</h2>
     <p>SMK Negeri 1 Blega Memiliki Kompetensi Keahlian Unggul Dibidang Rekayasa Teknologi</p>
     <div class="card-container">
       <div class="card">
-        <img src="LOGO PPLG.png" alt="RPL">
+        <img src="c:\Users\MyPC PRO\Downloads\LOGO PPLG.png" alt="RPL">
         <h3>Rekayasa Perangkat Lunak Mempelajari dan mendalami semua cara-cara pengembangan perangkat lunak termasuk pembuatan, pemeliharaan, manajemen organisasi pengembangan perangkat lunak dan manajemen kualitas</h3>
       </div>
       <div class="card">
-        <img src="LOGO TJKT.png" alt="TKJ">
+        <img src="c:\Users\MyPC PRO\Downloads\LOGO TJKT.png" alt="TKJ">
         <h3>Teknik Komputer dan Jaringan Mempelajari tentang ilmu berbasis Teknologi Informasi dan Komunikasi terkait perakitan komputer, perakitan jaringan komputer, dan pengoperasian perangkat lunak dan internet</h3>
       </div>
       <div class="card">
-        <img src="LOGO TO.png" alt="Otomotif">
+        <img src="c:\Users\MyPC PRO\Downloads\LOGO TO.png" alt="Otomotif">
         <h3>Teknik Kendaraan Ringan Mempelajari tentang Bidang Studi Keahlian Teknologi dan Rekayasa Program Studi Keahlian Teknik Otomotif yang menekankan pada keterampilan pelayanan jasa mekanik kendaraan sepeda motor roda dua</h3>
       </div>
       <div class="card">
-        <img src="LOGO AK.png" alt="AKL">
+        <img src="c:\Users\MyPC PRO\Downloads\LOGO AK.png" alt="AKL">
         <h3>Akuntansi dan Keuangan Lembaga Mempelajari tentang mengelola dan melakukan pencatatan keuangan secara manual maupun komputerisasi, serta keterampilan akuntansi, mengelola transaksi keuangan dan pajak                                              </h3>
       </div>
     </div>
   </section>
+
+  <!-- KONTAK -->
+  <section id="kontak" class="kontak">
+    <h2>Kontak Kami</h2>
+    <p>📍 Alamat: Jl. Raya Blega No. 01, Bangkalan, Madura</p>
+    <p>📞 Telepon: (031) 123456</p>
+    <p>✉️ Email: info@smkn1blega.sch.id</p>
+   <a href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20bertanya%20tentang%20penerimaan%20siswa%20baru" 
+   target="_blank" 
+   class="btn btn-success" 
+   style="background-color:#25D366; color:white; padding:10px 20px; border-radius:8px; text-decoration:none;">
+   💬 Hubungi via WhatsApp
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 SMKN 1 Blega | Semua Hak Dilindungi</p>
+  </footer>
+
+  <script>
+    // Script sederhana untuk toggle menu di HP
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+  <script>
+  const target = document.getElementById('target');
+  const container = document.getElementById('container');
+
+  // Untuk touch screen atau klik
+  target.addEventListener('click', () => {
+    const elemenBiru = document.createElement('div');
+    elemenBiru.classList.add('biru');
+    container.appendChild(elemenBiru);
+  });
+</script>
+
 </body>
 </html>
+[13.00, 8/07/2024] Bang Lerzy 
