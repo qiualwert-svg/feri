@@ -107,6 +107,7 @@ nav {
   display: none;
 }
 
+@media (max-width: 768px) {
   .nav-links {
     display: none;
     flex-direction: column;
@@ -216,7 +217,7 @@ nav {
 }
 
 /* PROFIL */
-.profil2 {
+.profil {
   padding: 40px 20px;
   text-align: center;
 }
@@ -293,4 +294,4 @@ footer {
   background-color: #004aad;
   color: white;
   margin-top: 30px;
-}                           
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
